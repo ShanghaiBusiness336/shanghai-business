@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Solicitar Consulta Gratuita | Shanghai Business</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body class="footer-match">
+<header class="site-header"><div class="shell nav-wrap"><a class="logo wordmark" href="index.html" aria-label="Shanghai Business Consulting S.R.L — Inicio"><img class="crest" src="assets/logo shanghai.png" alt=""><span class="brand-copy"><strong>SHANGHAI BUSINESS<br>CONSULTING S.R.L</strong><small>SOURCING AND TRADE CONECTOR</small></span></a><button class="menu-btn" aria-expanded="false" aria-controls="nav">☰</button><nav id="nav" class="nav"><a href="index.html">Inicio</a><a href="index.html#asesorias">Asesorías</a><a href="index.html#proceso">Proceso</a><a href="nosotros.html">Sobre nosotros</a><a class="active" href="reserva.html">Contacto</a></nav><div class="nav-actions"><a class="btn btn-gold nav-cta" href="reserva.html">Solicitar información</a></div></div></header>
+<section class="booking-hero red-section"><small>Sin costo · Sin compromiso</small><h1>Solicitar Consulta Gratuita</h1><p>Complete el formulario y seleccione una fecha y una hora disponible. Un asesor experto lo contactará.</p></section>
+<main class="booking-main"><div class="shell booking-grid">
+<form id="booking-form" class="booking-form">
+  <h2>Sus Datos</h2>
+  <label>Nombre completo *<input name="nombre" required placeholder="Ej: Juan García López"></label>
+  <label>Correo electrónico *<input name="correo" type="email" required placeholder="correo@empresa.com"></label>
+  <label>Número de teléfono *<input name="telefono" required placeholder="+00 000 000 000"></label>
+  <label>País *<select name="pais" required><option value="">Seleccione su país</option><option>Bolivia</option><option>Argentina</option><option>Brasil</option><option>Chile</option><option>Perú</option><option>Paraguay</option><option>Uruguay</option><option>Otro</option></select></label>
+  <label>Tipo de negocio *<select name="tipo_negocio" required><option value="">¿Cuál es su modelo de negocio?</option><option>Importador</option><option>Distribuidor</option><option>Mayorista</option><option>Retail</option><option>Servicios</option><option>Otro</option></select></label>
+  <label>Industria / sector *<select name="industria" required><option value="">¿En qué industria opera su empresa?</option><option>Tecnología</option><option>Textil / Moda</option><option>Construcción</option><option>Automotriz</option><option>Alimentos</option><option>Salud</option><option>Comercio</option><option>Servicios</option><option>Otra</option></select></label>
+  <label>Asesoría de interés<select name="servicio"><option value="Consulta general">Consulta general</option><option>Asesoramiento Previo al Viaje</option><option>Asistencia para la Visa</option><option>Reservas de Vuelos</option><option>Reservas de Hoteles</option><option>Traslados desde y hacia el Aeropuerto</option><option>Soporte de Viaje 24/7</option><option>Asistencia en la Exposición</option><option>Asistencia en el Aeropuerto</option><option>Cambio de Divisas</option><option>Factory Inspection</option><option>Acompañamiento en Shanghai</option></select></label>
+  <label class="wide">Motivo / necesidad<textarea name="motivo" rows="4" placeholder="Cuéntenos brevemente qué necesita"></textarea></label>
+  <input type="hidden" name="fecha" id="fecha-hidden" required>
+  <input type="hidden" name="hora" id="hora-hidden" required>
+  <button class="btn btn-gold full-btn" type="submit">Confirmar consulta gratuita</button>
+  <p class="tiny-center">Sin costo ni compromiso. Confirmación en 24 hs.</p><p id="form-message" class="form-message"></p>
+</form>
+<section class="date-card"><h2>Fecha y Hora</h2><p class="calendar-note">Seleccione una fecha disponible y luego una hora.</p><div class="calendar-toolbar"><button type="button" id="prev-month" aria-label="Mes anterior">‹</button><strong id="calendar-month"></strong><button type="button" id="next-month" aria-label="Mes siguiente">›</button></div><div class="calendar-weekdays"><span>Dom</span><span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span></div><div id="calendar-grid" class="calendar-grid"></div><div class="legend"><span><i class="gold-dot"></i>Seleccionado</span><span><i></i>No disponible</span><span><i class="red-dot"></i>Completo</span></div><div id="time-section" class="time-section"><h3>Horas disponibles</h3><p id="selected-date-label">Seleccione una fecha.</p><div id="time-slots" class="time-slots"></div></div><aside><b>Importante</b><p>La disponibilidad mostrada es de demostración para esta vista previa. Antes de producción se conectará al backend para consultar horarios reales.</p></aside></section>
+</div></main>
+<footer class="footer">
+  <div class="shell footer-grid">
+
+    <div>
+      <a class="logo wordmark footer-logo" href="index.html" aria-label="Shanghai Business Consulting S.R.L — Inicio">
+        <img class="crest footer-crest" src="assets/logo shanghai.png" alt="Shanghai Business Consulting S.R.L.">
+      </a>
+
+      <p>
+        Especializados en viajes de negocios B2B a China.
+        Conectamos empresas latinoamericanas con proveedores directos en Shanghai.
+      </p>
+
+      <div class="socials" aria-label="Redes y correo">
+        <span class="social-icon" aria-label="Facebook">
+          <svg class="icon" aria-hidden="true" focusable="false">
+            <use href="assets/icons.svg#facebook"></use>
+          </svg>
+        </span>
+
+        <span class="social-icon" aria-label="WhatsApp">
+          <svg class="icon" aria-hidden="true" focusable="false">
+            <use href="assets/icons.svg#whatsapp"></use>
+          </svg>
+        </span>
+
+        <span class="social-icon" aria-label="TikTok">
+          <svg class="icon" aria-hidden="true" focusable="false">
+            <use href="assets/icons.svg#tiktok"></use>
+          </svg>
+        </span>
+
+        <span class="social-icon" aria-label="Instagram">
+          <svg class="icon" aria-hidden="true" focusable="false">
+            <use href="assets/icons.svg#instagram"></use>
+          </svg>
+        </span>
+
+        <span class="social-icon" aria-label="Correo">
+          <svg class="icon" aria-hidden="true" focusable="false">
+            <use href="assets/icons.svg#mail"></use>
+          </svg>
+        </span>
+      </div>
+    </div>
+
+    <div>
+      <h4>Asesorías</h4>
+      <a href="index.html#asesorias">Visa</a>
+      <a href="index.html#asesorias">Vuelos</a>
+      <a href="index.html#asesorias">Hoteles</a>
+      <a href="index.html#asesorias">Traslados</a>
+      <a href="index.html#asesorias">Exposiciones</a>
+    </div>
+
+    <div>
+      <h4>Empresa</h4>
+      <a href="nosotros.html">Sobre Nosotros</a>
+      <a href="index.html#proceso">Cómo Trabajamos</a>
+      <a href="reserva.html">Contacto</a>
+    </div>
+
+    <div>
+  <h4>Contacto</h4>
+
+  <b>Email</b>
+  <a href="mailto:Info@shanghaibusiness.company">
+    Info@shanghaibusiness.company
+  </a>
+
+  <b>WhatsApp</b>
+  <a href="https://wa.me/59175338763"
+     target="_blank"
+     rel="noopener noreferrer">
+    +591 75338763
+  </a>
+
+  <b>Facebook</b>
+  <a href="https://www.facebook.com/share/1HmngXrXzj/?mibextid=wwXIfr"
+     target="_blank"
+     rel="noopener noreferrer">
+    Shanghai Business
+  </a>
+
+  <b>TikTok</b>
+  <a href="https://www.tiktok.com/@shanghai.business_"
+     target="_blank"
+     rel="noopener noreferrer">
+    @shanghai.business_
+  </a>
+
+  <b>Ubicación</b>
+  <a href="https://www.google.com/maps/search/?api=1&query=Edificio+Torre+Infrabol+Av+Montenegro+1439+San+Miguel+La+Paz+Bolivia"
+     target="_blank"
+     rel="noopener noreferrer">
+    Edificio Torre Infrabol, Av. Montenegro N.º 1439,
+    Piso 7, Oficina 1, San Miguel – Zona Sur, La Paz-Bolivia.
+  </a>
+
+  
+  <b>Horario</b>
+  <span>Lun–Vie, 09:00–18:00</span>
+</div>
+
+</div>
+
+<div class="shell footer-bottom">
+  <span>© 2026 Shanghai Business Consulting S.R.L. Todos los derechos reservados.</span>
+  <span>Ven por Contactos. Vuelve con Contratos.</span>
+</div>
+
+</footer>
+<script src="script.js"></script>
+
+<!-- MODAL DE CONFIRMACIÓN DE RESERVA -->
+<div id="success-modal" class="success-modal" hidden>
+  <div class="success-modal-box">
+
+    <div class="success-check">✓</div>
+
+    <h2>¡Solicitud enviada!</h2>
+
+    <p class="success-intro">
+      Tu solicitud de consulta ha sido registrada correctamente.
+    </p>
+
+    <div class="success-details">
+
+      <div>
+        <span>Nombre</span>
+        <strong id="success-nombre">—</strong>
+      </div>
+
+      <div>
+        <span>Asesoría</span>
+        <strong id="success-servicio">—</strong>
+      </div>
+
+      <div>
+        <span>Fecha</span>
+        <strong id="success-fecha">—</strong>
+      </div>
+
+      <div>
+        <span>Hora</span>
+        <strong id="success-hora">—</strong>
+      </div>
+
+      <div>
+        <span>Correo</span>
+        <strong id="success-correo">—</strong>
+      </div>
+
+    </div>
+
+    <p class="success-message">
+      Revisa tu correo para ver la confirmación y los datos de tu reunión.
+    </p>
+
+    <button
+      id="success-close"
+      class="btn btn-gold"
+      type="button"
+    >
+      ENTENDIDO
+    </button>
+
+  </div>
+</div>
+
+</body>
+</html>
