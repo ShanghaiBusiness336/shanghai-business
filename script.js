@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:3000';
+const API_BASE_URL = 'https://shanghai-business-backend.vercel.app';
 
 // Los textos extensos se editan en asesorias-detalles.js. NO en las tarjetas de index.html.
 const details = {
